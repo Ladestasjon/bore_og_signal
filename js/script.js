@@ -5,15 +5,19 @@ function loadNobil() {
     'apiversion': '3',
     'action': "search",
     'type': 'rectangle',
-    'northeast': bound.getNorthEast(),
-    'southwest': bound.getSouthWest(),
-    'existingids': idList},
+    'northeast': '(59.943921193288915, 10.826683044433594)',
+    'southwest': '(59.883683240905256, 10.650901794433594)',
+    'existingids': '189,195,199,89,48'},
     success: parseJsonResponse,
     dataType: 'jsonp'
     });
+}
 
-function parseJsonResponse() {
-    console.log("hej");
+function parseJsonResponse(data) {
+    console.log("hej" + data);
+    $.each(data, function(key, item) {
+        console.dir(item);
+     });
 }
 
 loadNobil();
