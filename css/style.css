@@ -1,0 +1,150 @@
+#pageheader {
+	background-image: linear-gradient(#fff, #E6E6E6);
+	padding-right: 15px;
+	min-height: 51px;
+	position:relative;
+	text-align: right;
+}
+#pageheader img {
+	left: 0;
+	margin-left: 25px;
+	position: absolute;
+	top: 17px;
+}
+
+#pageheader p {
+	color: #0079AA;	
+}
+
+.headertext {
+	color: #0079AA;	
+	display: inline;
+	font-family: helvetica;
+	font-size: 14px;
+	font-weight: normal;
+	margin-right: 10px;
+	position: relative;
+	top: 16px;
+}
+
+.tabs {
+	display: table;
+	height: 49px;
+}
+
+.tabs .active {
+	background-image: linear-gradient(#000, #00506F);
+}
+
+.container ul li.active a {
+	font-weight: bold;
+}
+
+.tab-pane-header {
+	margin-bottom: 20px;
+	margin-left: 25px;
+}
+
+.container ul {
+	display: table;
+	float: left;
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0;
+	width: 100%;
+}
+.container ul li {
+	display: table-cell;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(#1E79AB, #1E5879);
+	text-align: center;
+	vertical-align: middle;
+	width: 50%;
+}
+
+.container ul li + li {
+	border-left: 1px solid #369;
+}
+
+.container  ul li a {
+	display: block;
+	color: #fff;
+	font-size: 23px;
+	text-decoration: none;
+}
+
+.mytable {
+	border-collapse: collapse;
+}
+
+.mytable td {
+	min-width:140px;
+}
+
+.mytable tr:nth-child(odd) {
+	background: #fff;
+}
+
+.mytable tr.tableheader {
+	text-align: left;
+	background-image: linear-gradient(#FDFDFD, #D0D0D0);
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #ccc;
+}
+
+.mytable td+td {
+	padding-right: 25px;
+	width: 100%;
+}
+
+.mytable tr:nth-child(even) {
+	background: #ccc;
+}
+
+.mytable th, .mytable td {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 8px 0 8px 25px;
+}
+
+.mytable th {
+	font-size: 18px;
+    font-weight: normal;
+}
+
+#itemList {
+	margin-left: 15px;
+}
+
+.hr-class {
+	width: 90%;
+	border-color: #0079AA;	
+}
+
+/************************** Bootstrap overrides **************************/
+@media screen {
+  .container {
+  	margin: 0;
+  	padding: 0;
+	width: 100%;
+  }
+}
+
+h2 {
+	font-size: 23px;
+	margin-top: 0;
+}
+
+footer {
+	margin-left: 25px;
+}
+
+/************************** Responsive stuff *****************************/
+@media screen and (min-width: 658px) {
+	body {
+		margin: 0 auto;
+		width: 50%;
+	}
+}
